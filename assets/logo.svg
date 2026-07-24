@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066CC" />
+      <stop offset="100%" stop-color="#002266" />
+    </linearGradient>
+    <linearGradient id="brightBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00A8FF" />
+      <stop offset="100%" stop-color="#0044B3" />
+    </linearGradient>
+    <linearGradient id="globeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E6F2FF" />
+      <stop offset="100%" stop-color="#CCE0FF" />
+    </linearGradient>
+    
+    <!-- Text Arc Path -->
+    <path id="textArc" d="M 50,220 A 180,180 0 1,1 450,220" fill="none"/>
+  </defs>
+
+  <!-- Outer Ring / Circle Arc -->
+  <path d="M 45,210 A 190,190 0 1,1 455,210" fill="none" stroke="url(#blueGrad)" stroke-width="12" stroke-linecap="round" />
+
+  <!-- Globe Outer & Grid -->
+  <g transform="translate(250, 200)">
+    <!-- Globe Circle -->
+    <circle r="140" fill="url(#globeGrad)" stroke="#0044B3" stroke-width="3" opacity="0.9"/>
+    
+    <!-- Continent Outlines Sim -->
+    <path d="M-90,-40 Q-50,-90 0,-70 Q50,-90 90,-40 Q110,20 80,60 Q20,100 -50,80 Q-110,30 -90,-40 Z" fill="#B3D9FF" opacity="0.5"/>
+    <path d="M-60,10 Q-30,-20 10,-10 Q40,30 20,70 Q-40,60 -60,10 Z" fill="#99CEFF" opacity="0.6"/>
+
+    <!-- Grid Lines (Latitude & Longitude) -->
+    <ellipse rx="140" ry="45" fill="none" stroke="#0055D4" stroke-width="1.5" opacity="0.4"/>
+    <ellipse rx="140" ry="90" fill="none" stroke="#0055D4" stroke-width="1.5" opacity="0.4"/>
+    <ellipse rx="45" ry="140" fill="none" stroke="#0055D4" stroke-width="1.5" opacity="0.4"/>
+    <ellipse rx="90" ry="140" fill="none" stroke="#0055D4" stroke-width="1.5" opacity="0.4"/>
+    <line x1="-140" y1="0" x2="140" y2="0" stroke="#0055D4" stroke-width="2" opacity="0.5"/>
+    <line x1="0" y1="-140" x2="0" y2="140" stroke="#0055D4" stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <!-- Foreground: 3 Dynamic Student Silhouettes (Matching Provided Logo) -->
+  <g transform="translate(250, 190)">
+    <!-- Central Main Figure (Large) -->
+    <path d="M 0,-100 C 60,-40 90,40 100,100 C 50,80 -10,80 -40,100 C -10,60 -30,-20 0,-100 Z" fill="url(#brightBlue)"/>
+    <path d="M 0,-100 C -60,-40 -90,40 -100,100 C -50,80 10,80 40,100 C 10,60 30,-20 0,-100 Z" fill="url(#blueGrad)"/>
+    <circle cx="0" cy="-115" r="28" fill="url(#brightBlue)"/>
+
+    <!-- Left Student Figure -->
+    <path d="M -90,-20 C -40,20 -30,70 -30,110 C -70,95 -110,100 -130,120 C -110,80 -110,20 -90,-20 Z" fill="url(#blueGrad)"/>
+    <circle cx="-90" cy="-35" r="20" fill="url(#brightBlue)"/>
+
+    <!-- Right Student Figure -->
+    <path d="M 90,-20 C 40,20 30,70 30,110 C 70,95 110,100 130,120 C 110,80 110,20 90,-20 Z" fill="url(#blueGrad)"/>
+    <circle cx="90" cy="-35" r="20" fill="url(#blueGrad)"/>
+  </g>
+
+  <!-- Base: Open Book Pages Icon -->
+  <g transform="translate(250, 370)">
+    <!-- Book Left Wing -->
+    <path d="M 0,-10 Q -110,-40 -220,-10 L -230,15 Q -110,-15 0,15 Z" fill="url(#blueGrad)"/>
+    <path d="M 0,0 Q -100,-25 -200,0 L -208,18 Q -100,-10 0,18 Z" fill="url(#brightBlue)" opacity="0.8"/>
+    
+    <!-- Book Right Wing -->
+    <path d="M 0,-10 Q 110,-40 220,-10 L 230,15 Q 110,-15 0,15 Z" fill="url(#blueGrad)"/>
+    <path d="M 0,0 Q 100,-25 200,0 L 208,18 Q 100,-10 0,18 Z" fill="url(#brightBlue)" opacity="0.8"/>
+  </g>
+
+  <!-- Text Top Curved: UNIVERSAL PUBLIC SCHOOL -->
+  <text font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="#102B66" letter-spacing="4">
+    <textPath href="#textArc" startOffset="50%" text-anchor="middle">
+      UNIVERSAL PUBLIC SCHOOL
+    </textPath>
+  </text>
+
+  <!-- Text Bottom: UPS GOTEGAON -->
+  <text x="250" y="435" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="34" fill="#0D2259" letter-spacing="3">
+    UPS GOTEGAON
+  </text>
+</svg>
