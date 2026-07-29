@@ -27,15 +27,16 @@
     <div class="top-bar">
         <div class="container">
             <div class="top-info">
-                <div class="top-info-item">
+                <div class="top-info-item top-location">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span>Chhota Chhindwara, Gotegaon, Dist. Narsinghpur (M.P.)</span>
+                    <span class="desktop-address">Chhota Chhindwara, Gotegaon, Dist. Narsinghpur (M.P.)</span>
+                    <span class="mobile-address">Gotegaon (M.P.)</span>
                 </div>
-                <div class="top-info-item">
+                <div class="top-info-item top-phone">
                     <i class="fa-solid fa-phone"></i>
                     <a href="tel:+919425100000">+91 94251 XXXXX</a>
                 </div>
-                <div class="top-info-item">
+                <div class="top-info-item top-email">
                     <i class="fa-solid fa-envelope"></i>
                     <a href="mailto:info@universalgotegaon.edu.in">info@universalgotegaon.edu.in</a>
                 </div>
@@ -73,6 +74,10 @@
                     <li><a href="#gallery" class="nav-link">Gallery</a></li>
                     <li><a href="#downloads" class="nav-link">Downloads</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="mobile-nav-actions">
+                        <button class="btn btn-outline open-portal-modal" style="width: 100%;"><i class="fa-solid fa-user-lock"></i> Parent Portal</button>
+                        <button class="btn btn-primary open-admission-modal" style="width: 100%; margin-top: 8px;"><i class="fa-solid fa-graduation-cap"></i> Apply Online</button>
+                    </li>
                 </ul>
 
                 <div class="nav-actions">
@@ -633,7 +638,7 @@
                             <input type="text" id="cName" class="form-control" placeholder="e.g. Rajesh Sharma" required>
                         </div>
 
-                        <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                        <div class="form-group form-row-2col">
                             <div>
                                 <label for="cPhone">Phone Number *</label>
                                 <input type="tel" id="cPhone" class="form-control" placeholder="10-digit Mobile" required>
@@ -751,7 +756,7 @@
                     <input type="text" id="admStudentName" class="form-control" placeholder="Enter student name" required>
                 </div>
 
-                <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="form-group form-row-2col">
                     <div>
                         <label for="admDob">Date of Birth *</label>
                         <input type="date" id="admDob" class="form-control" required>
@@ -776,7 +781,7 @@
                     <input type="text" id="admParentName" class="form-control" placeholder="Enter parent name" required>
                 </div>
 
-                <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="form-group form-row-2col">
                     <div>
                         <label for="admPhone">Mobile Number *</label>
                         <input type="tel" id="admPhone" class="form-control" placeholder="10-digit mobile" required>
